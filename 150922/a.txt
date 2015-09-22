@@ -1,0 +1,46 @@
+
+/**
+ * This interface represents the object that has volume in 2D geomentry.
+ */
+public interface IVolume extends IGeomentry {
+  /**
+   * Checks given point is in this object.
+   * 
+   * @param x
+   *          the X of point to check
+   * @param y
+   *          the Y of point to check
+   * @return true if the point is in the object
+   */
+  public boolean contains(double x, double y);
+
+  /**
+   * Checks given point is in this object.
+   * 
+   * @param p
+   *          the point to check
+   * @return true if the point is in the object
+   */
+  public boolean contains(Point p);
+
+  /**
+   * Returns the center point of this object.
+   * 
+   * @return the center point
+   */
+  public Point getCenter();
+
+  /**
+   * Returns the center point's X of this object.
+   * 
+   * @return the center point's X
+   */
+  public double getCenterX();
+
+  /**
+   * Returns the center point's Y of this object.
+   * 
+   * @return the center point's Y
+   */
+  public double getCenterY();
+}
